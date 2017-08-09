@@ -39,7 +39,8 @@ trait Router extends Protocols {
         complete(List(1, 2, 3))
       } ~
         path("json") {
-          complete("json bourne")
+          val bonsai = sys.env("BONSAI")
+          complete(bonsai)
         } ~
         path("plaintext") {
           complete("Hello, World!")

@@ -2,7 +2,7 @@ import com.typesafe.sbt.packager.docker.{Cmd, ExecCmd}
 
 enablePlugins(JavaAppPackaging)
 
-name := "tom-service"
+name := "akka-http-microservice"
 
 version := "1.0"
 
